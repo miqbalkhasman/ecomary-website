@@ -1,6 +1,3 @@
- /* =========================
-   GLOBAL
-========================= */
 body {
   margin: 0;
   font-family: "Segoe UI", Arial, sans-serif;
@@ -8,25 +5,21 @@ body {
   color: #222;
 }
 
-/* =========================
-   HEADER
-========================= */
+/* HEADER */
 .main-header {
   background: #ffffff;
   text-align: center;
-  padding: 25px 20px 10px;
+  padding: 25px 20px 15px;
 }
 
 .header-center {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
   gap: 10px;
 }
 
 .header-center img {
   height: 40px;
-  background: #ffffff;
   padding: 4px 6px;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -38,22 +31,17 @@ body {
 }
 
 .brand-tagline {
-  margin-top: 6px;
   font-size: 15px;
   color: #555;
 }
 
-/* =========================
-   ANNOUNCEMENT BAR
-========================= */
+/* ANNOUNCEMENT BAR */
 .announcement-bar {
   width: 100%;
-  background: #222;
+  background: #111;
   overflow: hidden;
   white-space: nowrap;
   padding: 6px 0;
-
-  /* ✅ spacing fix */
   margin-bottom: 50px;
 }
 
@@ -62,7 +50,8 @@ body {
   padding-left: 100%;
   font-size: 14px;
   color: #ffffff;
-  animation: scrollText 20s linear infinite;
+  white-space: nowrap;
+  animation: scrollText 18s linear infinite;
 }
 
 @keyframes scrollText {
@@ -70,18 +59,36 @@ body {
   100% { transform: translateX(-100%); }
 }
 
-/* =========================
-   SECTIONS (GLOBAL SPACING CONTROL)
-========================= */
+/* SECTIONS */
 section {
-  padding: 50px 20px;   /* 🔑 SAME spacing everywhere */
+  padding: 60px 20px;
   text-align: center;
 }
 
-/* =========================
-   COURSES
-========================= */
-.courses {
+/* HERO */
+.hero h1 {
+  font-size: 34px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 15px auto 25px;
+  color: #555;
+}
+
+/* BUTTON */
+.primary-btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SERVICES */
+.services {
   max-width: 1100px;
   margin: auto;
 }
@@ -96,7 +103,7 @@ section {
 }
 
 .card h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .card p {
@@ -106,30 +113,47 @@ section {
 
 .card a {
   display: inline-block;
-  margin-top: 22px;
-  text-decoration: none;
-  color: #ffffff;
+  margin-top: 20px;
   background: #25D366;
-  padding: 12px 30px;
+  color: #ffffff;
+  padding: 12px 28px;
   border-radius: 8px;
+  text-decoration: none;
   font-weight: 600;
 }
 
-/* =========================
-   WHY CHOOSE US
-========================= */
+/* WHY CHOOSE US */
 .trust {
   max-width: 900px;
-  margin: auto;
+  margin: 80px auto; /* 🔧 GAP INCREASED */
   background: #ffffff;
-  padding: 45px 30px;
+  padding: 50px 30px;
   border-radius: 16px;
   box-shadow: 0 12px 35px rgba(0,0,0,0.08);
 }
 
-/* =========================
-   FOOTER
-========================= */
+.trust ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trust li {
+  margin: 12px 0;
+}
+
+/* CTA */
+.cta {
+  background: #000;
+  color: #fff;
+  margin-top: 80px; /* 🔧 EXTRA GAP ADDED */
+}
+
+.cta .primary-btn {
+  background: #fff;
+  color: #000;
+}
+
+/* FOOTER */
 footer {
   background: #ffffff;
   text-align: center;
